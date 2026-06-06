@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.12.4"
+  version: "0.12.5"
   llvm_version: "20.1"
 
 package:
@@ -10,13 +10,13 @@ package:
 
 source:
   url: https://github.com/qir-alliance/pyqir/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 4db944bc741863054b8e2fd2a0d4b7635d235d5ad8a4edcb5cc3f1476318e2ed
+  sha256: 170c4b981d5f6a48d8678c5dd519d915d57ab53f864830319cfeb5a78b732d77
   patches:
     - if: win
       then: use-dynamic-msvc-runtime.patch
 
 build:
-  number: 1
+  number: 0
   skip: not (match(python, python_min ~ ".*") and is_abi3)
   python:
     version_independent: ${{ is_abi3 }}
