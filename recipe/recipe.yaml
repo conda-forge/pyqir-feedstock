@@ -16,7 +16,7 @@ source:
       then: use-dynamic-msvc-runtime.patch
 
 build:
-  number: 0
+  number: 1
   skip: not (match(python, python_min ~ ".*") and is_abi3)
   python:
     version_independent: ${{ is_abi3 }}
