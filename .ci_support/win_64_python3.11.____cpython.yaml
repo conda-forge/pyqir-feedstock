@@ -11,15 +11,15 @@ cxx_compiler:
 is_abi3:
 - true
 libxml2_devel:
-- '2.14'
+- '2.15'
 pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.10.* *_cpython
+- 3.11.* *_cpython
 python_min:
-- '3.10'
+- '3.11'
 rust_compiler:
 - rust
 target_platform:
